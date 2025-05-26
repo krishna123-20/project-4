@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color:coral;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: aqua;
+    font-style: oblique;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color:crimson;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .hobby {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .hobby:hover {
+    transform: translateY(-5px);
+  }
+  
+  .hobby img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .hobby img:hover {
+    transform: scale(1.05);
+  }
+  
+  .hobby h2 {
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .hobby a {
+    color: #007acc;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .hobby a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 600px) {
+    body {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
